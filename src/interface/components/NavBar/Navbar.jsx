@@ -3,15 +3,31 @@ import "./Navbar.css"
 import SearchHeroe from "../../../heroes/pages/SearchHeroe/SearchHeroe";
 import { useContext } from "react";
 import AuthContext from "../../../auth/context/AuthContext";
+import Swal from "sweetalert2/dist/sweetalert2.all";
 const Navbar = () => {
     const navigate = useNavigate();
     const { logged, user, logout } = useContext(AuthContext);
 
     const handleLogout = () => {
-        logout();
-        navigate("/login", {
-            replace: true
+        Swal.fire({
+            title: 'Cerrar Sesion?',
+            text: "Gracias por visitar la pagina!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Si, continuar',
+            cancelButtonText: "Cancelar"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                logout();
+                navigate("/login", {
+                    replace: true
+                })
+            }
         })
+
+
     }
     return (
         <nav className="navegacion">
@@ -20,7 +36,7 @@ const Navbar = () => {
                 className="navegacion_titulo"
                 to="/"
             >
-                AppHeroes
+                HeroesApp
             </Link>
             {
                 logged ? (
@@ -45,7 +61,6 @@ const Navbar = () => {
                         <div className="logout">
                             <span>Bienvenido {user}</span>
                             <button
-                                to="/login"
                                 onClick={handleLogout}
                             >
                                 Logout

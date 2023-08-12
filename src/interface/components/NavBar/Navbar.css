@@ -1,11 +1,11 @@
 .navegacion {
     background-color: #222;
-    border-bottom: .5rem solid #b20000;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 1.6rem;
     padding: 1rem;
+    width: 100%;
 }
 
 .navegacion_titulo {
@@ -67,6 +67,10 @@
 
 @media (min-width:798px) {
     .navegacion {
+        top: 0;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
         align-items: center;
         flex-direction: row;
         padding: 1.5rem 2rem;
