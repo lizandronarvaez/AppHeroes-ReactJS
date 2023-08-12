@@ -14,7 +14,6 @@ html {
 body {
     font-size: 16px;
     margin: 0 auto 10rem auto !important;
-
     background-repeat: no-repeat;
     background-size: cover;
     background: linear-gradient(to bottom, #3a6186, #89253e);
@@ -26,4 +25,10 @@ body {
     margin: 0 auto;
     padding: 2rem 0;
     color: white;
+}
+
+@media (min-width: 768px){
+    .contenedor{
+    padding: 10rem 0 2rem 0;
+    }
 }
