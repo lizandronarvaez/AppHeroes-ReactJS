@@ -24,7 +24,7 @@
     background-color: rgb(224, 40, 40)
 }
 .heroe_img img{
-    height: 60rem;
+    height: 40rem;
 }
 
 .heroe_text h2{
@@ -34,11 +34,12 @@
 
 .heroe_text p{
     margin-top: 2rem;
-    line-height: 1.75;
+    line-height: 1.55;
     font-family: verdana, arial, helvetica;
     text-indent: 10rem;
     letter-spacing: 1.25px;
     font-size: 1.6rem;
+    padding: 0 1.5rem;
     text-align: justify;
 }
 
@@ -50,8 +51,22 @@
 @media (min-width: 768px){
     .info-heroe{
         grid-template-columns: repeat(2,1fr);
-        gap: 3rem;
-        margin-top: 5rem;
     }
-    
+    .heroe_img img{
+        height: 40rem;
+    }
+
+    .heroe_text p{
+        line-height: 1.75;
+    }
+}
+
+@media (min-width: 998px){
+    .info-heroe{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .heroe_img img{
+        height: 60rem;
+    }
+
 }
