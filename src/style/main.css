@@ -1,0 +1,29 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    margin: 0 auto 10rem auto !important;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(to bottom, #3a6186, #89253e);
+    /* background: linear-gradient(to right, #780206, #061161); */
+}
+
+.contenedor {
+    width: min(95%, 120rem);
+    margin: 0 auto;
+    padding: 2rem 0;
+    color: white;
+}

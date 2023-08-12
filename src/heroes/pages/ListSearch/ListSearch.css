@@ -1,0 +1,30 @@
+.heroe-is-found{
+    width: 30rem;
+    margin: 0 auto;
+    margin-top: 7rem;
+}
+
+.heroe-not-found{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.heroe-not-found h3 span{
+    font-style: italic;
+    color: rgb(233, 214, 214);
+}
+
+.heroe-not-found button {
+    padding: 1rem 2.3rem;
+    border:none;
+    background-color: rgb(233, 68, 68);
+    color:rgb(233, 214, 214) ;
+    font-weight: 600;
+    margin-top: 3rem;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+}
+
+.heroe-not-found button:hover{
+    background-color: rgb(224, 40, 40)
+}

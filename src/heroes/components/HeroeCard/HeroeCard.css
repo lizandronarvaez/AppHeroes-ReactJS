@@ -1,0 +1,28 @@
+.card {
+    padding: .5rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, .1);
+}
+
+.card-body {
+    font-weight: 600;
+    color: white;
+}
+
+.card-body p{
+    font-size: 2rem;
+}
+.card-body a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    background-color: rgb(209, 209, 104);
+    color: #333131;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+}
+.card-body a:hover{
+    background-color: rgb(243, 243, 43);
+    color: #000;
+
+}
+
