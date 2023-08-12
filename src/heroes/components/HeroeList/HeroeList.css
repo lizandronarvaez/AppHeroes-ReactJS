@@ -9,13 +9,13 @@
 @media (min-width: 768px) {
     .cards {
         grid-template-columns: repeat(2, 1fr);
-        width: auto;
+        width: 60rem;
     }
 }
 
-@media (min-width: 1068px) {
+@media (min-width: 998px) {
     .cards {
         grid-template-columns: repeat(3, 1fr);
-        width: auto;
+        width: 100%;
     }
 }
