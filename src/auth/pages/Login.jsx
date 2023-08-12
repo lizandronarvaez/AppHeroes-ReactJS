@@ -15,10 +15,10 @@ const Login = () => {
   // Button
   const handleLogin = (e) => {
     e.preventDefault();
+    const pathRecord = localStorage.getItem("pathRecord" || "/");
     if (user === "") return ErrorLogin();
-
     loginUser(user.trim());
-    navigate("/marvel-page", {
+    navigate(pathRecord, {
       replace: true
     });
   }
