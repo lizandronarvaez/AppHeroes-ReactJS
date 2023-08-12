@@ -11,9 +11,10 @@ const SearchHeroe = () => {
 
     const handleSubmitSearch = (e) => {
         e.preventDefault();
-        if (heroe.trim().length <= 1) return;
+        const dataInputClean = heroe.toLowerCase().trim();
+        if (dataInputClean.length <= 1) return;
 
-        navigate(`heroe/search?q=${heroe}`)
+        navigate(`heroe/search?q=${dataInputClean}`)
         setFormData({ heroe: "" })
     }
     return (
