@@ -4,6 +4,7 @@ import { useContext } from "react";
 import AuthContext from "../context/AuthContext";
 import useForm from "../hooks/useForm";
 import Navbar from "../../interface/components/NavBar/Navbar";
+import ErrorLogin from "../helpers/ErrorLogin";
 const Login = () => {
   // Navigate
   const navigate = useNavigate();
@@ -14,7 +15,7 @@ const Login = () => {
   // Button
   const handleLogin = (e) => {
     e.preventDefault();
-    if (user.length <= 1) return;
+    if (user === "") return ErrorLogin();
 
     loginUser(user.trim());
     navigate("/marvel-page", {
@@ -25,30 +26,30 @@ const Login = () => {
     <>
       <Navbar />
 
-        <div className="form">
-          <h1>Login</h1>
-          <hr />
-          <form onSubmit={handleLogin}>
-            <div className="form-box">
-              <input type="text"
-                name="user"
-                placeholder="Introduce Usuario"
-                onChange={handleInputChange}
-                value={user} />
-            </div>
-            <div className="form-box">
-              <input
-                type="password"
-                name="password"
-                placeholder="Introduce Password" />
-            </div>
-            <button
-              type="submit"
-            >
-              Login
-            </button>
-          </form>
-        </div>
+      <div className="form">
+        <h1>Login</h1>
+        <hr />
+        <form onSubmit={handleLogin}>
+          <div className="form-box">
+            <input type="text"
+              name="user"
+              placeholder="Introduce Usuario"
+              onChange={handleInputChange}
+              value={user} />
+          </div>
+          <div className="form-box">
+            <input
+              type="password"
+              name="password"
+              placeholder="Introduce Password" />
+          </div>
+          <button
+            type="submit"
+          >
+            Login
+          </button>
+        </form>
+      </div>
     </>
   )
 }
