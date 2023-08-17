@@ -17,9 +17,11 @@ const HeroesRoutes = () => {
                     <Route path='dc-page' element={<DcPage />} />
 
                     <Route path="heroe/:heroeId" element={<HeroePage />} />
-                    <Route path="heroe/search" element={<ListSearch />}/>
+                    <Route path="heroe/search" element={<ListSearch />} />
+
                     {/* Ruta principal */}
-                    <Route path='/' element={<Navigate to={"/marvel-page"} />} />
+                    <Route path='/*' element={<Navigate to={"/marvel-page"} />} />
+
                 </Routes>
             </div>
         </>
