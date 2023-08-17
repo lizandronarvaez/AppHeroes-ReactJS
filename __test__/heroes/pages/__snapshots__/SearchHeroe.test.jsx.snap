@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en la pagina SearchHeroe Debe de mostrar a un personaje y su valor 1`] = `
+<div>
+  <form
+    aria-label="buscar-personaje"
+    class="form-busqueda"
+  >
+    <input
+      aria-label="valor-personaje"
+      autocomplete="off"
+      name="heroe"
+      placeholder="Buscar un personaje"
+      type="text"
+      value="hulk"
+    />
+  </form>
+  <div
+    class="heroe-is-found"
+  >
+    <div
+      class="card"
+    >
+      <img
+        alt="Hulk"
+        class="card-img"
+        src="/heroes/marvel-hulk.jpg"
+      />
+      <div
+        class="card-body text-center"
+      >
+        <h5>
+          Bruce Banner
+        </h5>
+        <p>
+          Hulk
+        </p>
+        <a
+          href="/heroe/marvel-hulk"
+        >
+          Informacion
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Pruebas en la pagina SearchHeroe Debe de mostrar los valores por defecto 1`] = `
+<div>
+  <form
+    aria-label="buscar-personaje"
+    class="form-busqueda"
+  >
+    <input
+      aria-label="valor-personaje"
+      autocomplete="off"
+      name="heroe"
+      placeholder="Buscar un personaje"
+      type="text"
+      value=""
+    />
+  </form>
+</div>
+`;
+
+exports[`Pruebas en la pagina SearchHeroe Debe de mostrar un error si no encuentro el heroe 1`] = `
+<div>
+  <form
+    aria-label="buscar-personaje"
+    class="form-busqueda"
+  >
+    <input
+      aria-label="valor-personaje"
+      autocomplete="off"
+      name="heroe"
+      placeholder="Buscar un personaje"
+      type="text"
+      value="loki"
+    />
+  </form>
+  <div
+    class="heroe-not-found"
+  >
+    <h3>
+      No existe el personaje con el nombre 
+      <span>
+        loki
+      </span>
+    </h3>
+    <button>
+      Volver
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Pruebas en la pagina SearchHeroe Realizar la busqueda en el formulario nos lleva a otra pagina con el useNavigate() 1`] = `
+<div>
+  <form
+    aria-label="buscar-personaje"
+    class="form-busqueda"
+  >
+    <input
+      aria-label="valor-personaje"
+      autocomplete="off"
+      name="heroe"
+      placeholder="Buscar un personaje"
+      type="text"
+      value=""
+    />
+  </form>
+</div>
+`;
+
+exports[`Pruebas en la pagina SearchHeroe Si el personaje existe, debe devolver un div con una clase isFound 1`] = `
+<div>
+  <form
+    aria-label="buscar-personaje"
+    class="form-busqueda"
+  >
+    <input
+      aria-label="valor-personaje"
+      autocomplete="off"
+      name="heroe"
+      placeholder="Buscar un personaje"
+      type="text"
+      value="hulk"
+    />
+  </form>
+  <div
+    class="heroe-is-found"
+  >
+    <div
+      class="card"
+    >
+      <img
+        alt="Hulk"
+        class="card-img"
+        src="/heroes/marvel-hulk.jpg"
+      />
+      <div
+        class="card-body text-center"
+      >
+        <h5>
+          Bruce Banner
+        </h5>
+        <p>
+          Hulk
+        </p>
+        <a
+          href="/heroe/marvel-hulk"
+        >
+          Informacion
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

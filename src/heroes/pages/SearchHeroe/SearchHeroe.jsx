@@ -18,8 +18,9 @@ const SearchHeroe = () => {
         setFormData({ heroe: "" })
     }
     return (
-        <form className="form-busqueda" onSubmit={handleSubmitSearch}>
+        <form className="form-busqueda" onSubmit={handleSubmitSearch} aria-label="buscar-personaje">
             <input
+                aria-label="valor-personaje"
                 type="text"
                 name="heroe"
                 placeholder="Buscar un personaje"
